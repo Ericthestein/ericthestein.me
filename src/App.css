@@ -2,9 +2,38 @@
   text-align: center;
 }
 
+.App-carousel {
+  height: 100%;
+  width: 100%;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.Header-Bar {
+  width: 100%;
+  height: 50px;
+  align-content: center;
+  align-items: center;
+}
+
+.Header-Button-Group-FlexView {
+  height: 100%;
+}
+
+.Header-Button-Group {
+  flex: 1;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.Header-Button {
+  text-align: center;
+  vertical-align: middle;
+  border-color: #282c34;
+  border-width: 5px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
