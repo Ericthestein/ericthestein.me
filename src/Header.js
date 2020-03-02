@@ -2,21 +2,42 @@ import React from 'react';
 import ToggleButtonGroup from "react-bootstrap/ToggleButtonGroup";
 import ToggleButton from "react-bootstrap/ToggleButton";
 import FlexView from "react-flexview/lib/FlexView";
+import "./App.css"
+import {SocialIcon} from "react-social-icons"
 
 const valueToPage = {
     1: "/",
-    2: "/freelance",
-    3: "/research",
-    4: "/personal-projects",
-    5: "/resume"
+    2: "/stats",
+    3: "/freelance",
+    4: "/research",
+    5: "/personal-projects",
+    6: "/resume",
 }
 
 const pageToTitle = {
     "/": "Home",
+    "/stats": "Stats",
     "/freelance": "Freelance",
     "/research": "Research",
     "/personal-projects": "Personal Projects",
-    "/resume": "Resume"
+    "/resume": "Resume",
+}
+
+class SocialButtons extends React.Component {
+    constructor(props) {
+        super(props)
+
+    }
+
+    render() {
+        return(
+            <div className={this.props.className}>
+                <SocialIcon className="Header-Social-Button" url={"https://github.com/Ericthestein"}/>
+                <SocialIcon className="Header-Social-Button" url={"https://www.linkedin.com/in/eric-stein/"}/>
+                <SocialIcon className="Header-Social-Button" url={"mailto:ericthestein@gmail.com"}/>
+            </div>
+        )
+    }
 }
 
 export default class Header extends React.Component {
@@ -56,9 +77,9 @@ export default class Header extends React.Component {
         return(
             <div className="Header-Container">
                 <div className="Header-Bar">
-                    <div className="horizontal">
-                        <h1>hi </h1>
-                        <h2> there </h2>
+                    <div className="Horizontal">
+                        <h1 className="EricStein">Eric Stein</h1>
+                        <SocialButtons className="Header-Social-Buttons"/>
                     </div>
                 </div>
                 <div className="Header-Bar">

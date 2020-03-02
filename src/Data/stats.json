@@ -1,0 +1,12 @@
+{
+  "education": {
+    "Current GPA": 3.77,
+    "Expected Graduation Date": "May 2022"
+  },
+  "programming languages": [
+    "Java", "JavaScript", "C", "C++", "Lua", "Swift", "Python", "Intel x86 Assembly"
+  ],
+  "frameworks/tools": [
+    "React Native", "React", "TensorFlow", "Keras","Flask"
+  ]
+}

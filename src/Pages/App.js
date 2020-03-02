@@ -15,7 +15,7 @@ class ResumePlug extends React.Component {
 
     render() {
         return(
-            <p>
+            <p style={this.props.style}>
                 In a rush? Here's my <a href='../Resume.pdf' download>resume</a>
             </p>
         )
@@ -26,10 +26,9 @@ class App extends React.Component {
     render() {
         return (
             <div className="Background">
+                <ResumePlug style={{position: 'absolute', top: 0}}/>
                 <h1>Welcome aboard</h1>
                 <h4 className="bioText">{bioText}</h4>
-                <MySocialLinks />
-                <ResumePlug />
             </div>
         );
     }

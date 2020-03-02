@@ -13,7 +13,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
   position: absolute;
-  height: calc(100% - 50px);
+  height: calc(100% - 100px);
   width: 100%;
 }
 
@@ -70,9 +70,31 @@
   color: white;
 }
 
-.horizontal {
-  display: flex;
-  flex-direction: column;
+.Horizontal {
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #282c34;
+  color: white;
+  display: inline-flex;
+}
+
+.EricStein {
+  margin-left: 10px;
+  text-align: center;
+  height: 100%;
+  margin-top: auto;
+}
+
+.Header-Social-Buttons {
+  position: absolute;
+  right: 10px;
+  margin-top: auto;
+}
+
+.Header-Social-Button {
+  margin-left: 5px;
 }
 
 .App-link {

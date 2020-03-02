@@ -13,6 +13,7 @@ import Research from "./Pages/Research"
 import PersonalProjects from "./Pages/PersonalProjects"
 import Resume from "./Pages/Resume"
 import ResumeBackup from "./Pages/ResumeBackup"
+import Stats from "./Pages/Stats";
 
 const routing = (
     <Router>
@@ -23,7 +24,7 @@ const routing = (
             <Route exact path="/research" component={Research} />
             <Route exact path="/personal-projects" component={PersonalProjects} />
             <Route exact path="/resume" component={Resume} />
-
+            <Route exact path="/stats" component={Stats} />
 
         </div>
     </Router>
