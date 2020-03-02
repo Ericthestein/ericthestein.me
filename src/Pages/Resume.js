@@ -1,5 +1,5 @@
 import React from 'react';
-/*
+
 import logo from '../logo.svg';
 import '../App.css';
 import { Document, Page, pdfjs } from "react-pdf";
@@ -8,6 +8,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 let resumeFile = "https://cors-anywhere.herokuapp.com/" + "http://www.ericthestein.me/Resume.pdf" //"http://www.pdf995.com/samples/pdf.pdf"
 
+/*
 class FullPdfForDownload extends React.Component {
     render() {
         return(
@@ -39,14 +40,14 @@ class ResumeDownloadLink extends React.Component {
 export default class Resume extends React.Component {
     constructor(props) {
         super(props)
-        /*
+        // this.props.history.push("../Resume.pdf")
+        // window.location.reload(false);
+
         this.state = {
             numPages: null,
             pageNumber: 1,
-            resumeUrl: resumeFile
+            resumeUrl: "../Resume.pdf"//resumeFile
         }
-
-         */
     }
 
     componentDidMount() {
@@ -64,7 +65,7 @@ export default class Resume extends React.Component {
     }
 
     render() {
-        /*
+
         const { pageNumber, numPages } = this.state;
         return (
             <div className="App">
@@ -73,6 +74,7 @@ export default class Resume extends React.Component {
                     <p>
                         Resume
                     </p>
+                    <a href='../Resume.pdf' download>Download</a>
                     <Document
                         file={this.state.resumeUrl}
                         onLoadSuccess={this.onDocumentLoadSuccess}
@@ -81,11 +83,12 @@ export default class Resume extends React.Component {
                         <Page pageNumber={pageNumber} />
                     </Document>
                 </header>
-                <ResumeDownloadLink />
             </div>
         );
 
-         */
-        return null
+
+        return(
+            <a href='../Resume.pdf' download>Click to download</a>
+        )
     }
 }

@@ -23,6 +23,7 @@ const routing = (
             <Route exact path="/personal-projects" component={PersonalProjects} />
             <Route exact path="/resume" component={Resume} />
 
+
         </div>
     </Router>
 )

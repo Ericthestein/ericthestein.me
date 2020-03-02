@@ -8,6 +8,20 @@ const bioText = "My name is Eric Stein, and I'll be your captain today. I am a m
     " I have huge ambitions and am always looking to engage in impactful work. Enjoy your stay, and please do not hesitate to contact me if you have" +
     " any questions or would like to join me on my next voyage."
 
+class ResumePlug extends React.Component {
+    constructor(props) {
+        super(props)
+    }
+
+    render() {
+        return(
+            <p>
+                In a rush? Here's my <a href='../Resume.pdf' download>resume</a>
+            </p>
+        )
+    }
+}
+
 class App extends React.Component {
     render() {
         return (
@@ -15,6 +29,7 @@ class App extends React.Component {
                 <h1>Welcome aboard</h1>
                 <h4 className="bioText">{bioText}</h4>
                 <MySocialLinks />
+                <ResumePlug />
             </div>
         );
     }
