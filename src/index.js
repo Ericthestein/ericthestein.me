@@ -22,11 +22,13 @@ const routing = (
             <Route exact path="/research" component={Research} />
             <Route exact path="/personal-projects" component={PersonalProjects} />
             <Route exact path="/resume" component={Resume} />
-            <Route component={NotFound} />
+
         </div>
     </Router>
 )
 ReactDOM.render(routing, document.getElementById('root'))
+
+// <Route component={NotFound} />
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
