@@ -7,6 +7,7 @@ export default class ResumeBackup extends React.Component {
         super(props)
         this.props.history.push("../Resume.pdf")
         window.location.reload(false);
+
     }
 
     componentDidMount() {
