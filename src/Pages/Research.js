@@ -10,13 +10,10 @@ export default class Research extends React.Component {
 
     render() {
         return (
-            <div className="App">
-                <header className="App-header">
-
-                    <p>
-                        Under Construction
-                    </p>
-                </header>
+            <div className="Background">
+                <p>
+                    Under Construction
+                </p>
             </div>
         );
     }

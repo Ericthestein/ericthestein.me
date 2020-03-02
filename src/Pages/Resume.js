@@ -68,8 +68,7 @@ export default class Resume extends React.Component {
 
         const { pageNumber, numPages } = this.state;
         return (
-            <div className="App">
-                <header className="App-header">
+            <div className="Background">
 
                     <p>
                         Resume
@@ -82,7 +81,6 @@ export default class Resume extends React.Component {
                     >
                         <Page pageNumber={pageNumber} />
                     </Document>
-                </header>
             </div>
         );
 
