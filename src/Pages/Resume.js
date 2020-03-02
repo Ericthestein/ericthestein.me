@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../logo.svg';
 import '../App.css';
-import { Document, Page, pdfjs, PDFDownloadLink } from "react-pdf";
+import { Document, Page, pdfjs } from "react-pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 // import Header from "../Header";
 
@@ -22,11 +22,14 @@ class FullPdfForDownload extends React.Component {
 class ResumeDownloadLink extends React.Component {
     render() {
         return null
+        /*
         return(
             <PDFDownloadLink document={<FullPdfForDownload />} fileName="ericsteinresume.pdf">
                 {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'Download now!')}
             </PDFDownloadLink>
         )
+
+         */
     }
 }
 
@@ -66,7 +69,7 @@ export default class Resume extends React.Component {
                     <Document
                         file={this.state.resumeUrl}
                         onLoadSuccess={this.onDocumentLoadSuccess}
-                        onLoadError={console.error}
+                        onLoadError={console.log}
                     >
                         <Page pageNumber={pageNumber} />
                     </Document>
