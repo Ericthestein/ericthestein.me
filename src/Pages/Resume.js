@@ -1,4 +1,5 @@
 import React from 'react';
+/*
 import logo from '../logo.svg';
 import '../App.css';
 import { Document, Page, pdfjs } from "react-pdf";
@@ -22,25 +23,30 @@ class FullPdfForDownload extends React.Component {
 class ResumeDownloadLink extends React.Component {
     render() {
         return null
-        /*
+
         return(
             <PDFDownloadLink document={<FullPdfForDownload />} fileName="ericsteinresume.pdf">
                 {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'Download now!')}
             </PDFDownloadLink>
         )
 
-         */
+
     }
 }
+
+ */
 
 export default class Resume extends React.Component {
     constructor(props) {
         super(props)
+        /*
         this.state = {
             numPages: null,
             pageNumber: 1,
             resumeUrl: resumeFile
         }
+
+         */
     }
 
     componentDidMount() {
@@ -58,6 +64,7 @@ export default class Resume extends React.Component {
     }
 
     render() {
+        /*
         const { pageNumber, numPages } = this.state;
         return (
             <div className="App">
@@ -77,5 +84,8 @@ export default class Resume extends React.Component {
                 <ResumeDownloadLink />
             </div>
         );
+
+         */
+        return null
     }
 }
