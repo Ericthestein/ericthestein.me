@@ -54,17 +54,26 @@ export default class Header extends React.Component {
 
     render(){
         return(
-            <div className="Header-Bar">
-                <FlexView className="Header-Button-Group-FlexView" grow shrink basis='200'>
-                    <ToggleButtonGroup className="Header-Button-Group" type="radio" name="options" defaultValue={1/*this.state.currentKey*/} onChange={this.changePage}>
-                        {Object.keys(valueToPage).map((number) => {
-                            return(
-                                <ToggleButton className={"Header-Button"} value={number} checked={number === this.state.currentKey}>{pageToTitle[valueToPage[number]]}</ToggleButton>
-                            )
-                        })}
-                    </ToggleButtonGroup>
-                </FlexView>
+            <div className="Header-Container">
+                <div className="Header-Bar">
+                    <div className="horizontal">
+                        <h1>hi </h1>
+                        <h2> there </h2>
+                    </div>
+                </div>
+                <div className="Header-Bar">
+                    <FlexView className="Header-Button-Group-FlexView" grow shrink basis='200'>
+                        <ToggleButtonGroup className="Header-Button-Group" type="radio" name="options" defaultValue={1/*this.state.currentKey*/} onChange={this.changePage}>
+                            {Object.keys(valueToPage).map((number) => {
+                                return(
+                                    <ToggleButton className={"Header-Button"} value={number} checked={number === this.state.currentKey}>{pageToTitle[valueToPage[number]]}</ToggleButton>
+                                )
+                            })}
+                        </ToggleButtonGroup>
+                    </FlexView>
+                </div>
             </div>
+
         )
     }
 }
