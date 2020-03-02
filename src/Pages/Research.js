@@ -14,7 +14,7 @@ export default class Research extends React.Component {
                 <header className="App-header">
 
                     <p>
-                        Research
+                        Under Construction
                     </p>
                 </header>
             </div>

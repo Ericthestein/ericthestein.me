@@ -14,7 +14,7 @@ export default class Freelance extends React.Component {
                 <header className="App-header">
 
                     <p>
-                        Freelance
+                        Under Construction
                     </p>
                 </header>
             </div>

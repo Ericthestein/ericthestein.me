@@ -14,7 +14,7 @@ export default class PersonalProjects extends React.Component {
                 <header className="App-header">
 
                     <p>
-                        Personal Projects
+                        Under Construction
                     </p>
                 </header>
             </div>

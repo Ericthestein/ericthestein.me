@@ -12,6 +12,7 @@ import Freelance from "./Pages/Freelance"
 import Research from "./Pages/Research"
 import PersonalProjects from "./Pages/PersonalProjects"
 import Resume from "./Pages/Resume"
+import ResumeBackup from "./Pages/ResumeBackup"
 
 const routing = (
     <Router>
@@ -21,7 +22,7 @@ const routing = (
             <Route exact path="/freelance" component={Freelance} />
             <Route exact path="/research" component={Research} />
             <Route exact path="/personal-projects" component={PersonalProjects} />
-            <Route exact path="/resume" component={Resume} />
+            <Route exact path="/resume" component={ResumeBackup} />
 
 
         </div>
