@@ -22,7 +22,7 @@ const routing = (
             <Route exact path="/freelance" component={Freelance} />
             <Route exact path="/research" component={Research} />
             <Route exact path="/personal-projects" component={PersonalProjects} />
-            <Route exact path="/resume" component={ResumeBackup} />
+            <Route exact path="/resume" component={Resume} />
 
 
         </div>
