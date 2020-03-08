@@ -8,9 +8,9 @@ import NotFound from "./Pages/NotFound";
 import Header from "./Header";
 
 import App from './Pages/App'
-import Freelance from "./Pages/Freelance"
-import Research from "./Pages/Research"
-import PersonalProjects from "./Pages/PersonalProjects"
+import Apps from "./Pages/Apps"
+import Games from "./Pages/Games"
+import Miscellaneous from "./Pages/Miscellaneous"
 import Resume from "./Pages/Resume"
 import ResumeBackup from "./Pages/ResumeBackup"
 import Stats from "./Pages/Stats";
@@ -20,9 +20,9 @@ const routing = (
         <div>
             <Route component={Header} />
             <Route exact path="/" component={App} />
-            <Route exact path="/freelance" component={Freelance} />
-            <Route exact path="/research" component={Research} />
-            <Route exact path="/personal-projects" component={PersonalProjects} />
+            <Route exact path="/apps" component={Apps} />
+            <Route exact path="/games" component={Games} />
+            <Route exact path="/misc" component={Miscellaneous} />
             <Route exact path="/resume" component={Resume} />
             <Route exact path="/stats" component={Stats} />
 

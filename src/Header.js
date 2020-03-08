@@ -8,18 +8,18 @@ import {SocialIcon} from "react-social-icons"
 const valueToPage = {
     1: "/",
     2: "/stats",
-    3: "/freelance",
-    4: "/research",
-    5: "/personal-projects",
+    3: "/apps",
+    4: "/games",
+    5: "/misc",
     6: "/resume",
 }
 
 const pageToTitle = {
     "/": "Home",
     "/stats": "Stats",
-    "/freelance": "Freelance",
-    "/research": "Research",
-    "/personal-projects": "Personal Projects",
+    "/apps": "Apps",
+    "/games": "Games",
+    "/misc": "Miscellaneous",
     "/resume": "Resume",
 }
 

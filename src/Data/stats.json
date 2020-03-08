@@ -3,9 +3,16 @@
     "Current GPA": 3.77,
     "Expected Graduation Date": "May 2022"
   },
-  "programming languages": [
-    "Java", "JavaScript", "C", "C++", "Lua", "Swift", "Python", "Intel x86 Assembly"
-  ],
+  "programming languages": {
+    "Java":  0.9,
+    "JavaScript": 0.9,
+    "C":  0.8,
+    "C++":  0.7,
+    "Lua":  0.95,
+    "Swift":  0.7,
+    "Python":  0.7,
+    "Intel x86 Assembly": 0.6
+  },
   "frameworks/tools": [
     "React Native", "React", "TensorFlow", "Keras","Flask"
   ]

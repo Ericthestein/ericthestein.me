@@ -31,6 +31,7 @@ class StatSection extends Component {
                 dataKeys = Object.keys(this.state.data)
             }
         }
+        // TODO: Check for special display options (i.e. valueDisplay)
         return(
             <div className="Stat-Section-Container">
                 <h2 className="Stat-Section-Title">{this.props.category}</h2>
@@ -70,7 +71,7 @@ export default class Stats extends React.Component {
 
                 <div className="Stat-Sections">
                     <StatSection category={"Education"} />
-                    <StatSection category={"Programming Languages"} />
+                    <StatSection category={"Programming Languages"} valueDisplay={"Stars"}/>
                 </div>
             </div>
         ); // <p>Under Construction</p>
