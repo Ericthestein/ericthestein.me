@@ -69,24 +69,21 @@ export default class Resume extends React.Component {
         const { pageNumber, numPages } = this.state;
         return (
             <div className="Background">
-
-                    <p>
-                        Resume
-                    </p>
-                    <a href='../Resume.pdf' download>Download</a>
-                    <Document
-                        file={this.state.resumeUrl}
-                        onLoadSuccess={this.onDocumentLoadSuccess}
-                        onLoadError={console.log}
-                    >
-                        <Page pageNumber={pageNumber} />
-                    </Document>
+                <h3>Resume</h3>
+                <a href='../Resume.pdf' download>Download</a>
+                <Document
+                    className="Resume-Document"
+                    file={this.state.resumeUrl}
+                    onLoadSuccess={this.onDocumentLoadSuccess}
+                    onLoadError={console.log}
+                >
+                    <Page
+                        className="Resume-Page"
+                        pageNumber={pageNumber}
+                        height={window.screen.height / 2}
+                    />
+                </Document>
             </div>
         );
-
-
-        return(
-            <a href='../Resume.pdf' download>Click to download</a>
-        )
     }
 }

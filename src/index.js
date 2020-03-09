@@ -15,6 +15,8 @@ import Resume from "./Pages/Resume"
 import ResumeBackup from "./Pages/ResumeBackup"
 import Stats from "./Pages/Stats";
 
+document.body.style = 'background: #282c34;';
+
 const routing = (
     <Router>
         <div>

@@ -1,33 +1,9 @@
 import React, {Component} from 'react'
 
-import "../Styles/Projects.css"
-let projects = require('../Data/projects')
-
-class ProjectComponent extends Component {
-    constructor(props) {
-        super(props)
-
-    }
-
-    getCategoriesString = (categories) => {
-
-    }
-
-    render() {
-        let data = this.props.data
-        let categoriesString = this.getCategoriesString(data.categories)
-        return(
-            <div className={this.props.className || "Project-Component"}>
-                <h2>{data.name}</h2>
-                <div className="Date-And-Categories-Row">
-                    <h4>{data.date}</h4>
-                    <h4>{categoriesString}</h4>
-                </div>
-                <h3>{data.description}</h3>
-            </div>
-        )
-    }
-}
+import ProjectComponent from "./ProjectComponent";
+import "./Projects.css"
+import data from "../../Data/projects.js"
+let projects = data
 
 export default class ProjectsList extends Component {
     constructor(props) {
@@ -81,7 +57,6 @@ export default class ProjectsList extends Component {
     }
 
     updateFilteredComponents() {
-        console.log("updating filtered components")
         let components = []
         for (var i = 0; i < projects.length; i++) {
             let projectData = projects[i]
@@ -96,7 +71,6 @@ export default class ProjectsList extends Component {
     }
 
     render() {
-        console.log(this.state.filteredComponents.length + " copmonents")
         return(
             <div className={this.props.className || "Projects-List"}>
                 {this.state.filteredComponents.map((data, index) => {

@@ -1,0 +1,65 @@
+.Projects-Browser {
+    margin-top: 5%;
+    width: 90%;
+    height: 90%;
+    margin-bottom: 5%;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.Projects-Browser-Title {
+
+}
+
+.Projects-Browser-Description {
+
+}
+
+.Projects-Multiselect {
+
+}
+
+.Project-Component {
+    margin-top: 50px;
+}
+
+.Date-And-Categories-Row {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.Date {
+    position: relative;
+}
+
+.Categories {
+    position: relative;
+}
+
+.Projects-List {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.Media-Carousel {
+
+}
+
+.Media-Frame {
+    width: 80%;
+    height: 80%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    margin-left: 10%;
+}
+
+.Youtube-Frame {
+    width: 70%;
+}
+
+.Project-Image {
+    height: 100%;
+    width: 100%;
+}

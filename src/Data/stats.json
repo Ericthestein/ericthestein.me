@@ -13,7 +13,11 @@
     "Python":  0.7,
     "Intel x86 Assembly": 0.6
   },
-  "frameworks/tools": [
-    "React Native", "React", "TensorFlow", "Keras","Flask"
-  ]
+  "frameworks/libraries/services": {
+    "React Native":  0.9,
+    "React":  0.9,
+    "TensorFlow":  0.6,
+    "Keras":  0.6,
+    "Flask": 0.4
+  }
 }

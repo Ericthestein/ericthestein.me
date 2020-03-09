@@ -1,28 +1,28 @@
-[
+const data = [
   {
     "name": "311 App",
     "categories": ["app", "hackathon"],
     "date": "4/2019",
-    "description": "",
+    "description": "hey there",
     "media": [
       {
-        "type": "video",
-        "source": null,
-        "caption": null
+        "type": "image",
+        "src": require("./ProjectImages/cat.jpg")
       }
     ]
   },
   {
-    "name": "311 App",
+    "name": "Battle Royale Template",
     "categories": ["game", "hackathon"],
     "date": "4/2019",
     "description": "",
     "media": [
       {
         "type": "video",
-        "source": null,
-        "caption": null
+        "youtubeVideoID": "jgVE6CG1ZTA"
       }
     ]
   }
 ]
+
+export default data

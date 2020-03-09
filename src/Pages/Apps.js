@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../logo.svg';
 import '../App.css';
-import ProjectsBrowser from "../Components/ProjectsBrowser";
+import ProjectsBrowser from "../Components/Projects/ProjectsBrowser";
 
 export default class Apps extends React.Component {
     constructor(props) {

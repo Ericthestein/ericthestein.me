@@ -1,11 +1,12 @@
 import React, {Component} from 'react'
 import { Multiselect } from 'multiselect-react-dropdown';
 
-import "../Styles/Projects.css"
+import "./Projects.css"
 
 import ProjectsList from "./ProjectsList";
 
-let projectsData = require("../Data/projects")
+import data from "../../Data/projects.js"
+let projectsData = data
 
 export default class ProjectsBrowser extends Component {
     constructor(props) {
@@ -91,12 +92,15 @@ export default class ProjectsBrowser extends Component {
                 <h4 className="Projects-Browser-Description">{this.props.description}</h4>
                 <Multiselect
                     className="Projects-Multiselect"
+                    style={styles.multiSelect}
                     options={options}
                     selectedValues={multiSelectConstantFilters}
                     //disablePreSelectedValues={true}
                     onSelect={this.onFilterAdded}
                     onRemove={this.onFilterRemoved}
                     displayValue={"name"}
+                    avoidHighlightFirstOption={true}
+                    placeholder={"Filters"}
                 />
                 <ProjectsList
                     filters={this.state.filters}
@@ -104,5 +108,32 @@ export default class ProjectsBrowser extends Component {
 
             </div>
         )
+    }
+}
+
+const styles = {
+    multiSelect: {
+        multiselectContainer: { // To change css for multiselect (Width,height,etc..)
+
+        },
+        searchBox: { // To change search box element look
+            width: '80%',
+            left: '10%'
+        },
+        inputField: { // To change input field position or margin
+
+        },
+        chips: { // To change css chips(Selected options)
+
+        },
+        optionContainer: { // To change css for option container
+
+        },
+        option: { // To change css for dropdown options
+            color: "blue"
+        },
+        groupHeading: { // To chanage group heading style
+
+        }
     }
 }
