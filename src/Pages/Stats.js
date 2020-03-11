@@ -8,6 +8,57 @@ import "../Styles/Stats.css"
 
 let data = require("../Data/stats.json")
 
+class DataValue extends Component {
+    constructor(props) {
+        super(props)
+    }
+
+    render() {
+        if (this.props.valueDisplay === "Stars") {
+            return(
+                <StarRatings
+                    className="Stat-Data-Value"
+                    rating={this.props.value * 5}
+                    numberOfStars={5}
+                    starRatedColor={"yellow"}
+                />
+            )
+        } else {
+            if (Array.isArray(this.props.value)) {
+                return(
+                    <div className="Stat-Data-Value">
+                        {this.props.value.map((val, ind) => {
+                            return(
+                                <h4>{val}</h4>
+                            )
+                        })}
+                    </div>
+                )
+            } else {
+                return(
+                    <h4 className="Stat-Data-Value">{this.props.value}</h4>
+                )
+            }
+        }
+    }
+}
+
+class DataRow extends Component {
+    constructor(props) {
+        super(props)
+    }
+
+    render() {
+        console.log(this.props.key)
+        return(
+            <div className="Stat-Section-Data-Row">
+                <h4 className="Stat-Data-Key">{this.props.label}:</h4>
+                <DataValue valueDisplay={this.props.valueDisplay} value={this.props.value}/>
+            </div>
+        )
+    }
+}
+
 class StatSection extends Component {
     constructor(props) {
         super(props)
@@ -48,19 +99,7 @@ class StatSection extends Component {
                         } else {
                             let value = this.state.data[key]
                             return(
-                                <div key={index} className="Stat-Section-Data-Row">
-                                    <h4 className="Stat-Data-Key">{key}:</h4>
-                                    {this.props.valueDisplay === "Stars" ?
-                                        <StarRatings
-                                            className="Stat-Data-Value"
-                                            rating={value * 5}
-                                            numberOfStars={5}
-                                            starRatedColor={"yellow"}
-                                        />
-                                        :
-                                        <h4 className="Stat-Data-Value">{value}</h4>
-                                    }
-                                </div>
+                                <DataRow key={index} label={key} value={value} valueDisplay={this.props.valueDisplay}/>
                             )
                         }
 
@@ -84,6 +123,7 @@ export default class Stats extends React.Component {
                     <StatSection category={"Education"} />
                     <StatSection category={"Programming Languages"} valueDisplay={"Stars"}/>
                     <StatSection category={"Frameworks/Libraries/Services"} title={"Frameworks, Libraries, & Services"} valueDisplay={"Stars"}/>
+                    <StatSection category={"Software"} valueDisplay={"Stars"}/>
                 </div>
             </div>
         ); // <p>Under Construction</p>

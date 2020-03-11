@@ -19,10 +19,14 @@
 
 .Stat-Data-Key {
     position: relative;
+    width: 50%;
+    text-align: start;
 }
 
 .Stat-Data-Value {
     position: relative;
+    width: 50%;
+    text-align: end;
 }
 
 .Stat-Data-Value-Array {
@@ -39,6 +43,6 @@
     color: white;
     position: absolute;
     height: calc(100% - 100px);
-    width: 100%;
+    width: 95%;
     overflow-y: auto;
 }

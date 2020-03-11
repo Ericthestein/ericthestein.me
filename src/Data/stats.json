@@ -1,23 +1,64 @@
 {
   "education": {
-    "Current GPA": 3.77,
-    "Expected Graduation Date": "May 2022"
+    "Current GPA": 3.718,
+    "Expected Graduation Date": "May 2022",
+    "Relevant Coursework": [
+      "Data Structures & Algorithms I",
+      "Computer Organization & Architecture I",
+      "Discrete Mathematics",
+      "Data Structures & Algorithms II",
+      "Computer Organization & Architecture II",
+      "Software Development Essentials"
+    ],
+    "CS Credit Received For": [
+      "Introduction to Programming",
+      "Software Development Methods",
+      "Program and Data Representation",
+      "Computer Science Seminar",
+      "Advanced Software Development Techniques",
+      "Computer Architecture",
+      "Algorithms",
+      "Digital Logic Design"
+    ]
   },
   "programming languages": {
-    "Java":  0.9,
+    "Java":  0.8,
     "JavaScript": 0.9,
-    "C":  0.8,
+    "C":  0.75,
     "C++":  0.7,
-    "Lua":  0.95,
-    "Swift":  0.7,
-    "Python":  0.7,
-    "Intel x86 Assembly": 0.6
+    "Lua":  0.9,
+    "Swift":  0.5,
+    "Python":  0.6,
+    "Intel x86 Assembly": 0.4,
+    "Matlab": 0.5
   },
   "frameworks/libraries/services": {
-    "React Native":  0.9,
-    "React":  0.9,
-    "TensorFlow":  0.6,
-    "Keras":  0.6,
-    "Flask": 0.4
+    "React Native":  0.85,
+    "React":  0.8,
+    "Socket.io": 0.6,
+    "TensorFlow":  0.4,
+    "Firebase": 0.6,
+    "Heroku": 0.6,
+    "Amazon Web Services": 0.6,
+    "Microsoft Azure": 0.4,
+    "Google Cloud Platform": 0.4,
+    "Keras":  0.4,
+    "Flask": 0.4,
+    "Express": 0.5,
+    "GitHub": 0.6
+  },
+  "software": {
+    "Autodesk AutoCAD (certified user)": 0.5,
+    "Autodesk Revit (certified user)": 0.55,
+    "Adobe Photoshop": 0.65,
+    "Adobe Premiere": 0.65,
+    "Unity": 0.45,
+    "Unreal Engine": 0.4,
+    "Roblox Studio": 0.85,
+    "Microsoft Excel": 0.85,
+    "Jupyter": 0.5,
+    "IntelliJ": 0.75,
+    "WebStorm": 0.75,
+    "PyCharm": 0.45
   }
 }
