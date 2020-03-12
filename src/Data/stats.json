@@ -1,5 +1,7 @@
 {
   "education": {
+    "School": "University of Virginia: Engineering School",
+    "Major": "Computer Science (B.S.)",
     "Current GPA": 3.718,
     "Expected Graduation Date": "May 2022",
     "Relevant Coursework": [
@@ -19,7 +21,27 @@
       "Computer Architecture",
       "Algorithms",
       "Digital Logic Design"
-    ]
+    ],
+    "Extracurriculars": [],
+    "Volunteering": []
+  },
+  "education (high school)": {
+    "School": "Staten Island Technical High School",
+    "Final GPA": "4.0",
+    "Extracurriculars": [
+      "Science and Engineering Research Program (2015-2019)",
+      "Hackathon (2019)",
+      "Robotics Team (2015)",
+      "Entrepreneurship in Gaming Club President (2019)",
+      "Swim Team (2015-2018)",
+      "Math Team (2015-2017)"
+    ],
+    "Volunteering": [],
+    "Final Transcript": {
+      "valueDisplay": "download-link",
+      "link": "../HS_Transcript.pdf",
+      "text": "Download"
+    }
   },
   "programming languages": {
     "Java":  0.8,
@@ -51,7 +73,7 @@
     "Autodesk AutoCAD (certified user)": 0.5,
     "Autodesk Revit (certified user)": 0.55,
     "Adobe Photoshop": 0.65,
-    "Adobe Premiere": 0.65,
+    "Adobe Premiere": 0.6,
     "Unity": 0.45,
     "Unreal Engine": 0.4,
     "Roblox Studio": 0.85,

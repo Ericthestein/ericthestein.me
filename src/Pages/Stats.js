@@ -14,6 +14,13 @@ class DataValue extends Component {
     }
 
     render() {
+        if (typeof(this.props.value) === "object") {
+            if (this.props.value.valueDisplay === "download-link") {
+                return(
+                    <a href={this.props.value.link} download>{this.props.value.text}</a>
+                )
+            }
+        }
         if (this.props.valueDisplay === "Stars") {
             return(
                 <StarRatings
@@ -124,6 +131,7 @@ export default class Stats extends React.Component {
                     <StatSection category={"Programming Languages"} valueDisplay={"Stars"}/>
                     <StatSection category={"Frameworks/Libraries/Services"} title={"Frameworks, Libraries, & Services"} valueDisplay={"Stars"}/>
                     <StatSection category={"Software"} valueDisplay={"Stars"}/>
+                    <StatSection category={"Education (High School)"} />
                 </div>
             </div>
         ); // <p>Under Construction</p>
