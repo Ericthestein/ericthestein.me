@@ -21,6 +21,12 @@
 
 .Project-Component {
     margin-top: 50px;
+    height: 800px;
+}
+
+.Project-Component-Small {
+    margin-top: 50px;
+    height: 300px;
 }
 
 .Date-And-Categories-Row {
@@ -66,4 +72,17 @@
     height: 100%;
     width: 209px;
     border-color: transparent;
+}
+
+.Project-Links {
+    width: 100%;
+    height: 60px;
+}
+
+.Project-Link {
+
+}
+
+.MuiDivider-root {
+
 }

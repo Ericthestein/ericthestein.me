@@ -49,9 +49,9 @@ export default class ProjectsList extends Component {
             let d1Month, d1Year = this.dateToMonthAndYear(d1.date)
             let d2Month, d2Year = this.dateToMonthAndYear(d2.date)
 
-            let yearDiff = d1Year - d2Year
+            let yearDiff = d2Year - d1Year
             if (yearDiff === 0) {
-                return d1Month - d2Month
+                return d2Month - d1Month
             } else return yearDiff
         })
     }

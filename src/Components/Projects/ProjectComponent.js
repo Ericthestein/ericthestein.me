@@ -3,8 +3,10 @@ import React, {Component} from "react";
 import "./Projects.css"
 // import "../../../node_modules/react-image-gallery/styles/css/image-gallery.css";
 import Carousel from 'react-multi-carousel';
+import Divider from '@material-ui/core/Divider';
 import 'react-multi-carousel/lib/styles.css';
 import YouTube from 'react-youtube';
+import {SocialIcon} from "react-social-icons"
 
 let monthWords = {
     1: "January",
@@ -36,7 +38,7 @@ class MediaComponent extends Component {
                 const opts = {
 
                     playerVars: { // https://developers.google.com/youtube/player_parameters
-                        autoplay: 1
+                        autoplay: 0
                     }
                 };
                 return(
@@ -62,6 +64,7 @@ class MediaComponent extends Component {
                     />
                 )
         }
+        return null
     }
 }
 
@@ -94,14 +97,21 @@ export default class ProjectComponent extends Component {
         let dateString = this.getDateString(data.date)
 
         return(
-            <div className={this.props.className || "Project-Component"}>
+            <div className={data.media.length > 0 ? "Project-Component" : "Project-Component-Small"}>
                 <h2>{data.name}</h2>
                 <div className="Date-And-Categories-Row">
                     <h4 className="Date">{dateString}</h4>
                     <h4 className="Categories">{categoriesString}</h4>
                 </div>
                 <h4>{data.description}</h4>
-                <Carousel
+                <div className="Project-Links">
+                    {data.links && data.links.map((url, index) => {
+                        return(
+                            <SocialIcon className="Project-Link" key={index} url={url} />
+                        )
+                    })}
+                </div>
+                {data.media && <Carousel
                     swipeable={true}
                     draggable={true}
                     showDots={true}
@@ -140,7 +150,8 @@ export default class ProjectComponent extends Component {
                             <MediaComponent key={index} data={mediaData} />
                         )
                     })}
-                </Carousel>
+                </Carousel>}
+                <Divider light={true}/>
             </div>
         )
     }
