@@ -83,12 +83,16 @@ class StatSection extends Component {
     render() {
         var dataKeys
         var isArray = false
+        console.log(this.state.data)
+        console.log(Array.isArray(this.state.data))
         if (Array.isArray(this.state.data)) {
             dataKeys = this.state.data
             isArray = true
         } else {
             if (typeof(this.state.data) === "object") {
                 dataKeys = Object.keys(this.state.data)
+            } else {
+                dataKeys = []
             }
         }
 
@@ -99,9 +103,9 @@ class StatSection extends Component {
                     {dataKeys.map((key, index) => {
                         if (isArray) {
                             return(
-                                <div key={index} className="Stat-Section-Data-Row">
-                                    <h4 className="Stat-Data-Value-Array">{key}</h4>
-                                </div>
+                                <ul key={index} className="Stat-Section-Data-Row-Bullet">
+                                    <li className="Stat-Data-Value-Bullet">{key}</li>
+                                </ul>
                             )
                         } else {
                             let value = this.state.data[key]
@@ -132,6 +136,7 @@ export default class Stats extends React.Component {
                     <StatSection category={"Frameworks/Libraries/Services"} title={"Frameworks, Libraries, & Services"} valueDisplay={"Stars"}/>
                     <StatSection category={"Software"} valueDisplay={"Stars"}/>
                     <StatSection category={"Education (High School)"} />
+                    <StatSection category={"Awards"} />
                 </div>
             </div>
         ); // <p>Under Construction</p>

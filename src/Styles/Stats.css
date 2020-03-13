@@ -46,3 +46,12 @@
     width: 95%;
     overflow-y: auto;
 }
+
+.Stat-Section-Data-Row-Bullet {
+    justify-self: start;
+    text-align: left;
+}
+
+.Stat-Data-Value-Bullet {
+
+}

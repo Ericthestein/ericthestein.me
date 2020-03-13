@@ -22,8 +22,18 @@
       "Algorithms",
       "Digital Logic Design"
     ],
-    "Extracurriculars": [],
-    "Volunteering": []
+    "Extracurriculars": [
+      "Enactus - Consultant for Lytos Technologies - 2019-Present",
+      "Online Freelance - 2019-Present",
+      "CS Research Assistant - 2019-Present",
+      "Trigon Engineering Society - 2019-Present"
+    ],
+    "Volunteering": [
+      "SPCA Charlottesville - 2019",
+      "Virginia Discovery Museum - 2019",
+      "Camp Holiday Trails - 2019",
+      "Habitat for Humanity of Greater Charlottesville - 2020"
+    ]
   },
   "education (high school)": {
     "School": "Staten Island Technical High School",
@@ -36,13 +46,34 @@
       "Swim Team (2015-2018)",
       "Math Team (2015-2017)"
     ],
-    "Volunteering": [],
+    "Volunteering": [
+      "Staten Island Children's Museum - 2015",
+      "FIRST Lego League Competition Referee - 2016",
+      "American Institute of Architecture Marshmallow Building Challenge - 2017"
+    ],
     "Final Transcript": {
       "valueDisplay": "download-link",
       "link": "../HS_Transcript.pdf",
       "text": "Download"
     }
   },
+  "awards": [
+    "New York City Science and Engineering Fair (NYCSEF) Finalist",
+    "Mu Alpha Theta Mathematics Award",
+    "NYC Hack-League Finalist",
+    "Quality of Life Innovations Program Semifinalist",
+    "Staten Island Borough President’s Office’s Certificate of Appreciation / Borough Leader Award",
+    "The Attorney General's 2015 Triple C Award",
+    "Valedictorian of George L. Egbert Intermediate School",
+    "Urban Advantage Science Expo Presenter",
+    "National Honors Society Inductee",
+    "Junior National Honors Society (Arista) Inductee",
+    "Celebrating Art High Merit Award",
+    "AP Scholar with Honor",
+    "AP Scholar with Distinction",
+    "Silver Medal in Computer Science from Staten Island Technical High School",
+    "Bronze Medal in Electrical Engineering from Staten Island Technical High School"
+  ],
   "programming languages": {
     "Java":  0.8,
     "JavaScript": 0.9,

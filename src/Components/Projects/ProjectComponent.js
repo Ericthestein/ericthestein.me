@@ -40,23 +40,26 @@ class MediaComponent extends Component {
                     }
                 };
                 return(
-                    <div className="Media-Frame">
-                        <YouTube
-                            videoId={data.youtubeVideoID}
-                            className="Youtube-Frame"
-                            opts={opts}
-                            onReady={null}
-                        />
-                    </div>
+                    <YouTube
+                        videoId={data.youtubeVideoID}
+                        className="Youtube-Frame"
+                        opts={opts}
+                        onReady={null}
+                    />
                 )
             case "image":
                 return(
-                    <div className="Media-Frame">
-                        <img
-                            className="Project-Image"
-                            src={data.src}
-                        />
-                    </div>
+                    <img
+                        className="Project-Image"
+                        src={data.src}
+                    />
+                )
+            case "snack":
+                return(
+                    <iframe
+                        className="Project-Snack"
+                        src={data.src}
+                    />
                 )
         }
     }
@@ -99,7 +102,6 @@ export default class ProjectComponent extends Component {
                 </div>
                 <h4>{data.description}</h4>
                 <Carousel
-                    className="Media-Carousel"
                     swipeable={true}
                     draggable={true}
                     showDots={true}
@@ -127,11 +129,11 @@ export default class ProjectComponent extends Component {
                     keyBoardControl={true}
                     customTransition="all .5"
                     transitionDuration={500}
-                    containerClass="carousel-container"
+                    containerClass="Media-Carousel"
                     removeArrowOnDeviceType={["tablet", "mobile"]}
                     deviceType={this.props.deviceType}
                     dotListClass="custom-dot-list-style"
-                    itemClass="carousel-item-padding-40-px"
+                    itemClass="Media-Frame"
                 >
                     {data.media.map((mediaData, index) => {
                         return(
