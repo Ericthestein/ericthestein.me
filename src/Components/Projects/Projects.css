@@ -83,6 +83,8 @@
 
 }
 
-.MuiDivider-root {
-
+.Divider-Between-Projects {
+    background-color: white;
+    height: 1px;
+    margin-bottom: 20px;
 }

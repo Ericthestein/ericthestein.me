@@ -53,7 +53,7 @@ const data = [
   },
   {
     "name": "UVA Landmark Recognition App",
-    "categories": ["app", "research", "artificial intelligence"],
+    "categories": ["app", "research", "artificial intelligence", "work experience"],
     "date": "10/2019",
     "description": "An app that serves two purposes: 1) crowdsource pictures of UVA landmarks for use in training a computer vision model; 2) use this model to generate and display predictions about the UVA landmark represented by a given image",
     "media": [
@@ -67,7 +67,7 @@ const data = [
   },
   {
     "name": "SoundScope",
-    "categories": ["app", "web", "research", "artificial intelligence"],
+    "categories": ["app", "web", "research", "artificial intelligence", "work experience"],
     "date": "2/2020",
     "description": "An online learning environment with three main purposes: 1) allow users to visualize musical notes; 2) allow users to create music using block programming; 3) collect data for use in training artificial intelligence to offer musical suggestions",
     "media": [
@@ -104,7 +104,46 @@ const data = [
     links: [
         "https://github.com/Ericthestein/Aggressiveness-Detection-Deep-Learning"
     ]
+  },
+  {
+    "name": "Arena",
+    "categories": ["game", "personal project"],
+    "date": "8/2018",
+    "description": "A game in which players, either in teams or independently, enter an arena, scavenge for loot, fight AI and other players, complete quests, and extract. Earned money can be used to purchase furniture for one's house and weapons for one's arsenal. Features a unique dual-wielding system and two-handed crafting system",
+    "media": [
+
+    ],
+    "links": [
+        "https://www.roblox.com/games/2258086958/Arena-Early-Testing-Wave-1"
+    ]
+  },
+  {
+    "name": "Work at a Hotel",
+    "categories": ["game", "personal project"],
+    "date": "5/2019",
+    "description": "A game in which players assume the roles of various workers in a hotel, including: Manager, Bellhop, Room Service, Receptionist, Valet Driver, and Buffet Chef. By working together, players attract more AI guests, earn more money, and grow their hotel. Earned money can be spent on ownable guest rooms, furniture for such rooms, and more",
+    "media": [
+
+    ],
+    "links": [
+      "https://www.roblox.com/games/3168536831/Work-At-A-Hotel-Alpha"
+    ]
+  },
+  {
+    "name": "Day Trippin'",
+    "categories": ["app", "freelance", "work experience"],
+    "date": "2/2020",
+    "description": "A social media app for exploring various areas open to the public, such as hiking trails. Features a follow system, profile editing, an RSVP feature for events related to various sites, image posting, a map of available sites, and more",
+    "media": [
+
+    ],
+    "links": [
+        "https://www.upwork.com/jobs/~01e5812d53af8e684c"
+    ]
   }
 ]
+
+// TODO: college unfiltered
+// TODO: runner royale
 
 export default data

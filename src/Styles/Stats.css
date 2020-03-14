@@ -1,4 +1,5 @@
 .Stat-Section-Container {
+    margin-top: 40px;
     width: 100%;
     text-align: center;
 }
@@ -15,6 +16,9 @@
 .Stat-Section-Data-Row {
     display: inline-flex;
     justify-content: space-between;
+    width: 90%;
+    align-self: center;
+    justify-self: center;
 }
 
 .Stat-Data-Key {
@@ -42,8 +46,8 @@
     font-size: calc(10px + 2vmin);
     color: white;
     position: absolute;
-    height: calc(100% - 100px);
-    width: 95%;
+    height: calc(100% - 0px);
+    width: 100%;
     overflow-y: auto;
 }
 
@@ -52,6 +56,18 @@
     text-align: left;
 }
 
+.Stat-Section-Data-Value-Bullet {
+    text-align: left;
+    width: 50%;
+}
+
 .Stat-Data-Value-Bullet {
 
+}
+
+.Divider-Between-Sections {
+    background-color: white;
+    height: 1px;
+    width: 90%;
+    margin-left: 5%;
 }

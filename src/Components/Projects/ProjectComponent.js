@@ -3,10 +3,10 @@ import React, {Component} from "react";
 import "./Projects.css"
 // import "../../../node_modules/react-image-gallery/styles/css/image-gallery.css";
 import Carousel from 'react-multi-carousel';
-import Divider from '@material-ui/core/Divider';
 import 'react-multi-carousel/lib/styles.css';
 import YouTube from 'react-youtube';
 import {SocialIcon} from "react-social-icons"
+import {Divider} from "semantic-ui-react";
 
 let monthWords = {
     1: "January",
@@ -98,6 +98,7 @@ export default class ProjectComponent extends Component {
 
         return(
             <div className={data.media.length > 0 ? "Project-Component" : "Project-Component-Small"}>
+                {!this.props.hideDivider && <Divider className="Divider-Between-Projects" horizontal />}
                 <h2>{data.name}</h2>
                 <div className="Date-And-Categories-Row">
                     <h4 className="Date">{dateString}</h4>
@@ -151,7 +152,6 @@ export default class ProjectComponent extends Component {
                         )
                     })}
                 </Carousel>}
-                <Divider light={true}/>
             </div>
         )
     }

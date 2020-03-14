@@ -8,19 +8,15 @@ import {SocialIcon} from "react-social-icons"
 const valueToPage = {
     1: "/",
     2: "/stats",
-    3: "/apps",
-    4: "/games",
-    5: "/misc",
-    6: "/resume",
+    3: "/projects",
+    4: "/resume.pdf",
 }
 
 const pageToTitle = {
     "/": "Home",
     "/stats": "Stats",
-    "/apps": "Apps",
-    "/games": "Games",
-    "/misc": "Miscellaneous",
-    "/resume": "Resume",
+    "/projects": "Projects",
+    "/resume.pdf": "Resume",
 }
 
 class SocialButtons extends React.Component {

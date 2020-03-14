@@ -75,7 +75,7 @@ export default class ProjectsList extends Component {
             <div className={this.props.className || "Projects-List"}>
                 {this.state.filteredComponents.map((data, index) => {
                     return(
-                        <ProjectComponent data={data} key={index}/>
+                        <ProjectComponent data={data} key={index} hideDivider={index === 0}/>
                     )
                 })}
             </div>

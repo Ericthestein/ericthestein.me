@@ -40,24 +40,17 @@ class ResumeDownloadLink extends React.Component {
 export default class Resume extends React.Component {
     constructor(props) {
         super(props)
-        // this.props.history.push("../Resume.pdf")
-        // window.location.reload(false);
 
         this.state = {
             numPages: null,
             pageNumber: 1,
-            resumeUrl: "../Resume.pdf"//resumeFile
+            resumeUrl: "../resume.pdf"//resumeFile
         }
     }
 
     componentDidMount() {
-        /*
-        fetch("../Resume.pdf").then((res) => {
-            this.setState({
-                resumeUrl: "https://cors-anywhere.herokuapp.com/" + res.url
-            })
-        })
-         */
+        this.props.history.push("../resume.pdf")
+        window.location.reload(false);
     }
 
     onDocumentLoadSuccess = ({ numPages }) => {
@@ -66,6 +59,7 @@ export default class Resume extends React.Component {
 
     render() {
 
+        return null
         const { pageNumber, numPages } = this.state;
         return (
             <div className="Background">

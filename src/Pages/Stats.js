@@ -5,6 +5,7 @@ import logo from '../logo.svg';
 import '../App.css';
 import "../Styles/Stats.css"
 // import Header from "../Header";
+import { Button, Divider, Input, Segment } from 'semantic-ui-react'
 
 let data = require("../Data/stats.json")
 
@@ -33,14 +34,23 @@ class DataValue extends Component {
         } else {
             if (Array.isArray(this.props.value)) {
                 return(
-                    <div className="Stat-Data-Value">
+                    <ul className="Stat-Section-Data-Value-Bullet">
+                        {this.props.value.map((val, ind) => {
+                            return(
+                                <li className="Stat-Data-Value-Bullet">{val}</li>
+                            )
+                        })}
+                    </ul>
+                )
+                /*
+                <div className="Stat-Data-Value">
                         {this.props.value.map((val, ind) => {
                             return(
                                 <h4>{val}</h4>
                             )
                         })}
                     </div>
-                )
+                 */
             } else {
                 return(
                     <h4 className="Stat-Data-Value">{this.props.value}</h4>
@@ -116,6 +126,7 @@ class StatSection extends Component {
 
                     })}
                 </div>
+                {!this.props.hideDivider && <Divider className="Divider-Between-Sections" horizontal />}
             </div>
         )
     }
@@ -136,7 +147,7 @@ export default class Stats extends React.Component {
                     <StatSection category={"Frameworks/Libraries/Services"} title={"Frameworks, Libraries, & Services"} valueDisplay={"Stars"}/>
                     <StatSection category={"Software"} valueDisplay={"Stars"}/>
                     <StatSection category={"Education (High School)"} />
-                    <StatSection category={"Awards"} />
+                    <StatSection category={"Awards"} hideDivider/>
                 </div>
             </div>
         ); // <p>Under Construction</p>

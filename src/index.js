@@ -14,6 +14,7 @@ import Miscellaneous from "./Pages/Miscellaneous"
 import Resume from "./Pages/Resume"
 import ResumeBackup from "./Pages/ResumeBackup"
 import Stats from "./Pages/Stats";
+import Projects from "./Pages/Projects";
 
 document.body.style = 'background: #282c34;';
 
@@ -22,12 +23,9 @@ const routing = (
         <div>
             <Route component={Header} />
             <Route exact path="/" component={App} />
-            <Route exact path="/apps" component={Apps} />
-            <Route exact path="/games" component={Games} />
-            <Route exact path="/misc" component={Miscellaneous} />
-            <Route exact path="/resume" component={Resume} />
+            <Route exact path="/projects" component={Projects} />
+            <Route exact path="/resume.pdf" component={Resume} />
             <Route exact path="/stats" component={Stats} />
-
         </div>
     </Router>
 )
