@@ -16,7 +16,7 @@ class ResumePlug extends React.Component {
     render() {
         return(
             <p style={this.props.style}>
-                In a rush? Here's my <a href='../Resume.pdf' download>resume</a>
+                In a rush? Here's my <a href='../resume.pdf' download>resume</a>
             </p>
         )
     }
