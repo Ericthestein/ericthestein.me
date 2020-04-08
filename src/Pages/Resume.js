@@ -64,7 +64,7 @@ export default class Resume extends React.Component {
         return (
             <div className="Background">
                 <h3>Resume</h3>
-                <a href='../Resume.pdf' download>Download</a>
+                <a href='../resume.pdf' download>Download</a>
                 <Document
                     className="Resume-Document"
                     file={this.state.resumeUrl}
