@@ -6,12 +6,12 @@ const data = [
     "description": "An Android/iOS app written in React Native that populates a map with recent 311 incidents in New York City. Made as part of the first NYC CS4All Hack League.",
     "media": [
       {
-        "type": "snack",
-        "src": "https://appetize.io/embed/8bnmakzrptf1hv9dq7v7bnteem?autoplay=false&debug=true&device=iphonex&deviceColor=black&embed=true&orientation=portrait&screenOnly=false&xDocMsg=true&xdocMsg=true&params=%7B%22EXKernelLaunchUrlDefaultsKey%22:%22exp:%2F%2Fexpo.io%2F@ericthestein%2F311-map%2BbFtZ!fRms%22,%22EXKernelDisableNuxDefaultsKey%22:true%7D&scale=50&osVersion=11.4"
-      },
-      {
         "type": "image",
         "src": require("./ProjectImages/311AppGif.gif")
+      },
+      {
+        "type": "snack",
+        "src": "https://appetize.io/embed/8bnmakzrptf1hv9dq7v7bnteem?autoplay=false&debug=true&device=iphonex&deviceColor=black&embed=true&orientation=portrait&screenOnly=false&xDocMsg=true&xdocMsg=true&params=%7B%22EXKernelLaunchUrlDefaultsKey%22:%22exp:%2F%2Fexpo.io%2F@ericthestein%2F311-map%2BbFtZ!fRms%22,%22EXKernelDisableNuxDefaultsKey%22:true%7D&scale=50&osVersion=11.4"
       }
     ],
     links: [
@@ -57,7 +57,30 @@ const data = [
     "date": "10/2019",
     "description": "An app that serves two purposes: 1) crowdsource pictures of UVA landmarks for use in training a computer vision model; 2) use this model to generate and display predictions about the UVA landmark represented by a given image",
     "media": [
-
+      {
+        "type": "image",
+        "src": require("./ProjectImages/ULM_Predict.PNG")
+      },
+      {
+        "type": "image",
+        "src": require("./ProjectImages/ULM_PredictionResult.PNG")
+      },
+      {
+        "type": "image",
+        "src": require("./ProjectImages/ULM_Collect.PNG")
+      },
+      {
+        "type": "image",
+        "src": require("./ProjectImages/ULM_Label.PNG")
+      },
+      {
+        "type": "image",
+        "src": require("./ProjectImages/ULM_Confirmation.PNG")
+      },
+      {
+        "type": "image",
+        "src": require("./ProjectImages/ULM_Leaderboard.PNG")
+      },
     ],
     links: [
         "https://github.com/Ericthestein/UVA-Landmark-Recognition-Mobile-App",
@@ -71,11 +94,22 @@ const data = [
     "date": "2/2020",
     "description": "An online learning environment with three main purposes: 1) allow users to visualize musical notes; 2) allow users to create music using block programming; 3) collect data for use in training artificial intelligence to offer musical suggestions",
     "media": [
-
+      {
+        "type": "image",
+        "src": require("./ProjectImages/SoundScope_Home.png")
+      },
+      {
+        "type": "image",
+        "src": require("./ProjectImages/SoundScope_Snap.png")
+      },
+      {
+        "type": "image",
+        "src": require("./ProjectImages/SoundScope_Microphone.png")
+      },
     ],
     links: [
-        "https://github.com/Ericthestein/SoundScope",
-        "https://soundscope-website.s3.amazonaws.com/index.html"
+        //"https://github.com/Ericthestein/SoundScope",
+        "https://soundscope-website.web.app/"
     ]
   },
   {
@@ -99,7 +133,10 @@ const data = [
     "date": "4/2019",
     "description": "A research project in which a model was trained to detect whether a given audio file contains aggressiveness. This project was extended to also detect whether a given audio file contains an instance of bullying",
     "media": [
-
+      {
+        "type": "image",
+        "src": require("./ProjectImages/Agg_Shortcut.gif")
+      }
     ],
     links: [
         "https://github.com/Ericthestein/Aggressiveness-Detection-Deep-Learning"
@@ -135,10 +172,68 @@ const data = [
     "date": "2/2020",
     "description": "A social media app for exploring various areas open to the public, such as hiking trails. Features a follow system, profile editing, an RSVP feature for events related to various sites, image posting, a map of available sites, and more",
     "media": [
-
+      {
+        "type": "image",
+        "src": require("./ProjectImages/DT_Auth.PNG")
+      },
+      {
+        "type": "image",
+        "src": require("./ProjectImages/DT_Map.PNG")
+      },
+      {
+        "type": "image",
+        "src": require("./ProjectImages/DT_Sites.PNG")
+      },
+      {
+        "type": "image",
+        "src": require("./ProjectImages/DT_Filters.PNG")
+      },
+      {
+        "type": "image",
+        "src": require("./ProjectImages/DT_Profile.PNG")
+      },
+      {
+        "type": "image",
+        "src": require("./ProjectImages/DT_Follow.PNG")
+      },
+      {
+        "type": "image",
+        "src": require("./ProjectImages/DT_RSVP.PNG")
+      },
+      {
+        "type": "image",
+        "src": require("./ProjectImages/DT_Compose.PNG")
+      },
     ],
     "links": [
         "https://www.upwork.com/jobs/~01e5812d53af8e684c"
+    ]
+  },
+  {
+    "name": "College Unfiltered",
+    "categories": ["web", "work experience"],
+    "date": "3/2020",
+    "description": "A website that allows college students to anonymously answer questions that assist high school students in making informed decisions about where they will receive their higher education. Similar to GlassDoor, but for colleges. Currently has 190+ registered users. My role involved developing the initial prototype, including the authentication system and the question answering/saving system.",
+    "media": [
+      {
+        "type": "image",
+        "src": require("./ProjectImages/CU_Auth.png")
+      },
+      {
+        "type": "image",
+        "src": require("./ProjectImages/CU_EmailVerification.png")
+      },
+      {
+        "type": "image",
+        "src": require("./ProjectImages/CU_Home.png")
+      },
+      {
+        "type": "image",
+        "src": require("./ProjectImages/CU_Answer.png"),
+      }
+    ],
+    "links": [
+        "https://collegeunfiltered.com"
     ]
   }
 ]

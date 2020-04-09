@@ -41,17 +41,20 @@ export default class ProjectsList extends Component {
 
     dateToMonthAndYear = (dateString) => {
         let components = dateString.split("/")
-        return parseInt(components[0]), parseInt(components[1]) // POTBUG: String.parseInt
+        return {
+            year: parseInt(components[1]),
+            month: parseInt(components[0])
+        }// POTBUG: String.parseInt
     }
 
     sortMostRecent = (components) => {
         components.sort((d1, d2) => {
-            let d1Month, d1Year = this.dateToMonthAndYear(d1.date)
-            let d2Month, d2Year = this.dateToMonthAndYear(d2.date)
+            let d1Data = this.dateToMonthAndYear(d1.date)
+            let d2Data = this.dateToMonthAndYear(d2.date)
 
-            let yearDiff = d2Year - d1Year
+            let yearDiff = d2Data.year - d1Data.year
             if (yearDiff === 0) {
-                return d2Month - d1Month
+                return d2Data.month - d1Data.month
             } else return yearDiff
         })
     }

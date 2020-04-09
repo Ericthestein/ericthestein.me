@@ -4,9 +4,9 @@ import '../App.css';
 import Slider from 'infinite-react-carousel';
 import MySocialLinks from "../Components/MySocialLinks";
 
-const bioText = "My name is Eric Stein, and I'll be your captain today. I am a maker of software, games, mobile apps, websites, and AI." +
-    " I have huge ambitions and am always looking to engage in impactful work. Enjoy your stay, and please do not hesitate to contact me if you have" +
-    " any questions or would like to join me on my next voyage."
+const bioText = "My name is Eric Stein, and this is my starship. I am a maker of software, games, mobile apps, websites, and AI." +
+    " I have huge ambitions and am always looking for my next impactful adventure. Enjoy your stay, and please do not hesitate to contact me if you have" +
+    " any questions or would like to embark on a voyage together."
 
 class ResumePlug extends React.Component {
     constructor(props) {
