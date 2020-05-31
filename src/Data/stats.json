@@ -2,7 +2,8 @@
   "education": {
     "School": "University of Virginia: Engineering School",
     "Major": "Computer Science (B.S.)",
-    "Current GPA": 3.718,
+    "Current Major GPA": 3.85,
+    "Current GPA": 3.791,
     "Expected Graduation Date": "May 2022",
     "Relevant Coursework": [
       "Data Structures & Algorithms I",
@@ -10,7 +11,10 @@
       "Discrete Mathematics",
       "Data Structures & Algorithms II",
       "Computer Organization & Architecture II",
-      "Software Development Essentials"
+      "Software Development Essentials",
+      "Theory of Computation",
+      "Operating Systems",
+      "HCI in Software Development"
     ],
     "CS Credit Received For": [
       "Introduction to Programming",

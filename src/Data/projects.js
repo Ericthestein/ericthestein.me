@@ -84,7 +84,7 @@ const data = [
     ],
     links: [
         "https://github.com/Ericthestein/UVA-Landmark-Recognition-Mobile-App",
-        "https://testflight.apple.com/join/qwiaF1SD",
+        "https://apps.apple.com/us/app/uva-landmark-recognition/id1485524207?ls=1",
         "https://play.google.com/store/apps/details?id=com.ericstein.uvalandmarkrecognition&hl=en_US"
     ]
   },
