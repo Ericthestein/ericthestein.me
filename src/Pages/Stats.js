@@ -5,7 +5,8 @@ import logo from '../logo.svg';
 import '../App.css';
 import "../Styles/Stats.css"
 // import Header from "../Header";
-import { Button, Divider, Input, Segment } from 'semantic-ui-react'
+import {Divider, Input, Segment } from 'semantic-ui-react'
+import {Button} from '@material-ui/core'
 
 let data = require("../Data/stats.json")
 

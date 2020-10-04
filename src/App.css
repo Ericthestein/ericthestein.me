@@ -3,6 +3,7 @@
 }
 
 .Background {
+  position: absolute;
   text-align: center;
   background-color: #282c34;
   display: flex;
@@ -12,9 +13,18 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  position: absolute;
-  height: calc(100% - 100px);
+  top: 105px;
+  bottom: 0;
+  flex: 1;
   width: 100%;
+}
+
+.ProjectsBrowserOnProjectsPage {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  height: calc(100% - 20px);
+  margin-bottom: 0;
 }
 
 .App-carousel {
@@ -31,12 +41,14 @@
   background-color: #282c34;
   width: 100%;
   height: 50px;
+  margin-top: 5px;
   align-content: center;
   align-items: center;
 }
 
 .Header-Button-Group-FlexView {
-  height: 100%;
+  margin-top: 10px;
+  height: 80%;
 }
 
 .Header-Button-Group {
@@ -51,6 +63,11 @@
   border-color: #282c34;
   border-width: 5px;
   border-radius: 0;
+  flex: 1;
+}
+.Header-Button:focus {
+  outline: none !important;
+  outline-offset: none !important;
 }
 
 @media (prefers-reduced-motion: no-preference) {

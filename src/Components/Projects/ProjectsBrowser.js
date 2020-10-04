@@ -76,7 +76,7 @@ export default class ProjectsBrowser extends Component {
 
     onFilterRemoved = (selectedList, selectedValue) => {
         let currentFilters = this.state.filters
-        currentFilters.splice(currentFilters.indexOf(selectedValue.name))
+        currentFilters.splice(currentFilters.indexOf(selectedValue.name), 1)
         this.setState({
             filters: currentFilters
         })
@@ -118,10 +118,11 @@ const styles = {
         },
         searchBox: { // To change search box element look
             width: '80%',
+            height: '10%',
             left: '10%'
         },
         inputField: { // To change input field position or margin
-
+            color: 'white'
         },
         chips: { // To change css chips(Selected options)
 
@@ -130,7 +131,8 @@ const styles = {
 
         },
         option: { // To change css for dropdown options
-            color: "blue"
+            color: "white",
+            backgroundColor: '#282c34',
         },
         groupHeading: { // To chanage group heading style
 

@@ -20,15 +20,16 @@ export default class ProjectsList extends Component {
 
     componentDidUpdate(prevProps, prevState, snapshot) {
         if (!this.filterUpdateDebounce) {
+            console.log("updating")
             this.filterUpdateDebounce = true
             this.updateFilteredComponents()
             setTimeout(() => {
                 this.filterUpdateDebounce = false
-            }, 1000)
+            }, 100)
         }
     }
 
-    isValidProject(projectData) {
+    isValidProject = (projectData) => {
         let {filters} = this.props
         for (var i = 0; i < filters.length; i++) {
             let filter = filters[i]

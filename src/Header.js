@@ -2,14 +2,27 @@ import React from 'react';
 import ToggleButtonGroup from "react-bootstrap/ToggleButtonGroup";
 import ToggleButton from "react-bootstrap/ToggleButton";
 import FlexView from "react-flexview/lib/FlexView";
+import {Button} from '@material-ui/core'
 import "./App.css"
 import {SocialIcon} from "react-social-icons"
+import withStyles from "@material-ui/core/styles/withStyles";
 
 const valueToPage = {
     1: "/",
     2: "/stats",
     3: "/projects",
     4: "/resume.pdf",
+}
+
+const customPageFunctions = {
+    4: () => {
+        const link = document.createElement('a');
+        link.href = `/resume.pdf`; // Eric Stein's Résumé
+        link.target = "_blank";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
 }
 
 const pageToTitle = {
@@ -28,9 +41,9 @@ class SocialButtons extends React.Component {
     render() {
         return(
             <div className={this.props.className}>
-                <SocialIcon className="Header-Social-Button" url={"https://github.com/Ericthestein"}/>
-                <SocialIcon className="Header-Social-Button" url={"https://www.linkedin.com/in/eric-stein/"}/>
-                <SocialIcon className="Header-Social-Button" url={"mailto:ericthestein@gmail.com"}/>
+                <SocialIcon className="Header-Social-Button" url={"https://github.com/Ericthestein"} target={"_blank"}/>
+                <SocialIcon className="Header-Social-Button" url={"https://www.linkedin.com/in/eric-stein/"} target={"_blank"}/>
+                <SocialIcon className="Header-Social-Button" url={"mailto:ericthestein@gmail.com"} target={"_blank"}/>
             </div>
         )
     }
@@ -57,7 +70,12 @@ export default class Header extends React.Component {
     }
 
     changePage = (option) => {
-        this.history.push(valueToPage[option])
+        const customFunction = customPageFunctions[option];
+        if (customFunction) {
+            customFunction();
+        } else {
+            this.history.push(valueToPage[option])
+        }
     }
 
     pageToValue = (page) => {
@@ -80,13 +98,17 @@ export default class Header extends React.Component {
                 </div>
                 <div className="Header-Bar">
                     <FlexView className="Header-Button-Group-FlexView" grow shrink basis='200'>
-                        <ToggleButtonGroup className="Header-Button-Group" type="radio" name="options" defaultValue={1/*this.state.currentKey*/} onChange={this.changePage}>
-                            {Object.keys(valueToPage).map((number, index) => {
-                                return(
-                                    <ToggleButton className={"Header-Button"} value={number} checked={number === this.state.currentKey} key={index}>{pageToTitle[valueToPage[number]]}</ToggleButton>
-                                )
-                            })}
-                        </ToggleButtonGroup>
+                        {Object.keys(valueToPage).map((number, index) => {
+                            return(
+                                <BootstrapButton
+                                    variant={"contained"}
+                                    className={"Header-Button"}
+                                    value={number}
+                                    key={index}
+                                    onClick={() => {this.changePage(number)}}
+                                >{pageToTitle[valueToPage[number]]}</BootstrapButton>
+                            )
+                        })}
                     </FlexView>
                 </div>
             </div>
@@ -94,3 +116,42 @@ export default class Header extends React.Component {
         )
     }
 }
+
+const BootstrapButton = withStyles({
+    root: {
+        boxShadow: 'none',
+        textTransform: 'none',
+        fontSize: 16,
+        padding: '6px 12px',
+        border: '1px solid',
+        lineHeight: 1.5,
+        backgroundColor: '#ffffff',
+        borderColor: '#282c34',
+        borderWidth: '0px',
+        borderRightWidth: '1px',
+        borderLeftWidth: '1px',
+        borderRadius: 0,
+        fontFamily: [
+            '-apple-system',
+            'BlinkMacSystemFont',
+            '"Segoe UI"',
+            'Roboto',
+            '"Helvetica Neue"',
+            'Arial',
+            'sans-serif',
+            '"Apple Color Emoji"',
+            '"Segoe UI Emoji"',
+            '"Segoe UI Symbol"',
+        ].join(','),
+        '&:hover': {
+            backgroundColor: '#ffffff',
+            borderColor: '#000000',
+            boxShadow: 'none',
+        },
+        '&:active': {
+            boxShadow: 'none',
+            backgroundColor: '#ffffff',
+            borderColor: '#000000',
+        },
+    },
+})(Button);

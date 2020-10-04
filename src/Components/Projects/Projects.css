@@ -1,14 +1,14 @@
 .Projects-Browser {
-    margin-top: 5%;
-    width: 90%;
-    height: 90%;
-    margin-bottom: 5%;
+    height: 100%;
+    width: 100%;
     text-align: center;
     justify-content: space-between;
+    overflow-y: hidden;
 }
 
 .Projects-Browser-Title {
-
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
 
 .Projects-Browser-Description {
@@ -44,9 +44,12 @@
 }
 
 .Projects-List {
-    height: 100%;
+    position: relative;
+    height: 87%;
     width: 100%;
     overflow-y: auto;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .Media-Carousel {

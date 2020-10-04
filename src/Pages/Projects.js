@@ -11,11 +11,13 @@ export default class Projects extends React.Component {
     render() {
         return (
             <div className="Background">
-                <ProjectsBrowser
-                    constantFilters={[]}
-                    title={"Projects"}
-                    description={""}
-                />
+                <div className={"ProjectsBrowserOnProjectsPage"}>
+                    <ProjectsBrowser
+                        constantFilters={[]}
+                        title={"Projects"}
+                        description={""}
+                    />
+                </div>
             </div>
         );
     }
