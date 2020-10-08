@@ -5,6 +5,18 @@
     "Current Major GPA": 3.85,
     "Current GPA": 3.791,
     "Expected Graduation Date": "May 2022",
+    "Current Unofficial Transcript": {
+      "valueDisplay": "download-link",
+      "link": "../UVA_Transcript.pdf",
+      "text": "Download"
+    },
+    "Google Developer Student Club Leadership": [
+      "Founded UVA's first Google DSC in 2020",
+      "Recruited 200+ student developers",
+      "Hosted a variety of hands-on code labs featuring Google products, such as Firebase, GCP, and Flutter",
+      "Liasoned with other organizations at UVA to find real-world projects for members to contribute to",
+      "Mentored Solution Challenge teams"
+    ],
     "Relevant Coursework": [
       "Data Structures & Algorithms I",
       "Computer Organization & Architecture I",
@@ -14,7 +26,8 @@
       "Software Development Essentials",
       "Theory of Computation",
       "Operating Systems",
-      "HCI in Software Development"
+      "Game Design",
+      "Linear Algebra"
     ],
     "CS Credit Received For": [
       "Introduction to Programming",
@@ -27,8 +40,9 @@
       "Digital Logic Design"
     ],
     "Extracurriculars": [
-      "Enactus - Consultant for Lytos Technologies - 2019-Present",
-      "Online Freelance - 2019-Present",
+      "Google Developer Student Club - 2020-Present",
+      "Enactus - Consultant for Lytos Technologies - 2019-2020",
+      "Online Freelance - 2019-2020",
       "CS Research Assistant - 2019-Present",
       "Trigon Engineering Society - 2019-Present"
     ],

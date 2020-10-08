@@ -11,13 +11,13 @@ const valueToPage = {
     1: "/",
     2: "/stats",
     3: "/projects",
-    4: "/resume.pdf",
+    4: "/EricSteinResume.pdf",
 }
 
 const customPageFunctions = {
     4: () => {
         const link = document.createElement('a');
-        link.href = `/resume.pdf`; // Eric Stein's Résumé
+        link.href = `/EricSteinResume.pdf`; // Eric Stein's Résumé
         link.target = "_blank";
         document.body.appendChild(link);
         link.click();
@@ -29,7 +29,7 @@ const pageToTitle = {
     "/": "Home",
     "/stats": "Stats",
     "/projects": "Projects",
-    "/resume.pdf": "Resume",
+    "/EricSteinResume.pdf": "Resume",
 }
 
 class SocialButtons extends React.Component {

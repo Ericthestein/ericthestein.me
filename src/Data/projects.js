@@ -1,5 +1,45 @@
 const data = [
   {
+    "name": "Pareto Touch",
+    "categories": ["app", "work experience", "web", "freelance"],
+    "date": "9/2020",
+    "description": "A population health management system initially for Pareto Population Health Management Practice comprised of: (1) a cross-platform mobile app, " +
+        "which provides check-in, appointment-booking, and geofencing functionality, and (2) a web app and backend services that, together, allow for geofences to be set up, " +
+        "alerts to be sent when users of the mobile apps enter certain areas, and check-ins to be effortlessly viewed and managed. I " +
+        "contributed by fully developing the iOS & Android apps, the administrator web app, and the backend services. This position originated from a freelance job " +
+        "sourced through Upwork.com. Built with React Native, React, Java, & Firebase: Cloud Firestore, Cloud Functions, Hosting",
+    "media": [
+      {
+        "type": "image",
+        "src": require("./ProjectImages/Pareto_Home.PNG")
+      },
+      {
+        "type": "image",
+        "src": require("./ProjectImages/Pareto_CheckIn.PNG")
+      },
+      {
+        "type": "image",
+        "src": require("./ProjectImages/Pareto_GeofencingOverview.PNG")
+      },
+      {
+        "type": "image",
+        "src": require("./ProjectImages/Pareto_Log.PNG")
+      },
+      {
+        "type": "image",
+        "src": require("./ProjectImages/Pareto_Appointment.PNG")
+      },
+      {
+        "type": "image",
+        "src": require("./ProjectImages/Pareto_Settings.PNG")
+      },
+    ],
+    links: [
+      "https://testflight.apple.com/join/bk88dfTD",
+      "https://play.google.com/store/apps/details?id=com.paretopopulation"
+    ]
+  },
+  {
     "name": "NYC 311 Map App",
     "categories": ["app", "hackathon"],
     "date": "4/2019",
@@ -89,7 +129,7 @@ const data = [
     ]
   },
   {
-    "name": "SoundScope",
+    "name": "TuneScope",
     "categories": ["app", "web", "research", "artificial intelligence", "work experience"],
     "date": "2/2020",
     "description": "An online learning environment with three main purposes: 1) allow users to visualize musical notes; 2) allow users to create music using block programming; 3) collect data for use in training artificial intelligence to offer musical suggestions",
@@ -108,8 +148,7 @@ const data = [
       },
     ],
     links: [
-        //"https://github.com/Ericthestein/SoundScope",
-        "https://soundscope-website.web.app/"
+        "http://tunescope.org/"
     ]
   },
   {

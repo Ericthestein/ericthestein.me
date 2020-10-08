@@ -115,7 +115,7 @@ export default class ProjectComponent extends Component {
                 {data.media && <Carousel
                     swipeable={true}
                     draggable={true}
-                    showDots={true}
+                    showDots={false}
                     responsive={{
                         desktop: {
                             breakpoint: { max: 3000, min: 1024 },
