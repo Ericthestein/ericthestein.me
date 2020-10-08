@@ -91,3 +91,29 @@
     height: 1px;
     margin-bottom: 20px;
 }
+
+/* random project displayer */
+
+.random-project-displayer-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.random-project-displayer-image {
+    flex: 5;
+    height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.random-project-displayer-name-container {
+    flex: 1;
+    height: 20%;
+    margin-left: 10px;
+    font-size: 2vh;
+}
