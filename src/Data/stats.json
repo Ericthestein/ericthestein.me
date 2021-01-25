@@ -2,9 +2,9 @@
   "education": {
     "School": "University of Virginia: Engineering School",
     "Major": "Computer Science (B.S.)",
-    "Current Major GPA": 3.85,
-    "Current GPA": 3.791,
-    "Expected Graduation Date": "May 2022",
+    "Current Major GPA": 3.871,
+    "Current GPA": 3.818,
+    "Graduation Date": "May 2022",
     "Current Unofficial Transcript": {
       "valueDisplay": "download-link",
       "link": "../UVA_Transcript.pdf",
@@ -27,7 +27,11 @@
       "Theory of Computation",
       "Operating Systems",
       "Game Design",
-      "Linear Algebra"
+      "Linear Algebra",
+      "Machine Learning",
+      "HCI",
+      "Data Science Systems",
+      "Intro to CyberSecurity"
     ],
     "CS Credit Received For": [
       "Introduction to Programming",
@@ -93,13 +97,14 @@
     "Bronze Medal in Electrical Engineering from Staten Island Technical High School"
   ],
   "programming languages": {
-    "Java":  0.8,
+    "Java":  0.9,
     "JavaScript": 0.9,
+    "TypeScript": 0.7,
     "C":  0.75,
     "C++":  0.7,
     "Lua":  0.9,
     "Swift":  0.5,
-    "Python":  0.6,
+    "Python":  0.7,
     "Intel x86 Assembly": 0.4,
     "Matlab": 0.5
   },
@@ -108,11 +113,12 @@
     "React":  0.8,
     "Socket.io": 0.6,
     "TensorFlow":  0.4,
-    "Firebase": 0.6,
+    "Firebase": 0.8,
+    "Flutter": 0.5,
     "Heroku": 0.6,
     "Amazon Web Services": 0.6,
     "Microsoft Azure": 0.4,
-    "Google Cloud Platform": 0.4,
+    "Google Cloud Platform": 0.6,
     "Keras":  0.4,
     "Flask": 0.4,
     "Express": 0.5,

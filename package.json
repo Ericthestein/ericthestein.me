@@ -72,7 +72,7 @@
   },
   "engines": {
     "npm": "6.13.4",
-    "node": "14.7.0"
+    "node": "14.15.4"
   },
   "homepage": "http://ericthestein.me/",
   "devDependencies": {
