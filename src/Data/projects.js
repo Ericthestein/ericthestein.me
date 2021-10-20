@@ -1,5 +1,20 @@
 const data = [
   {
+    "name": "AddressEye",
+    "categories": ["web", "artificial intelligence", "api"],
+    "date": "4/2021",
+    "description": "A Twitter bot that responds to mentions containing street addresses with satellite imagery of those addresses",
+    "media": [
+      {
+        "type": "image",
+        "src": require("./ProjectImages/AddressEye_Example.png")
+      }
+    ],
+    links: [
+      "https://github.com/Ericthestein/AddressEye-Twitter-Bot"
+    ]
+  },
+  {
     "name": "Pareto Touch",
     "categories": ["app", "work experience", "web", "freelance"],
     "date": "9/2020",
@@ -37,6 +52,21 @@ const data = [
     links: [
       "https://testflight.apple.com/join/bk88dfTD",
       "https://play.google.com/store/apps/details?id=com.paretopopulation"
+    ]
+  },
+  {
+    "name": "TensorSnap",
+    "categories": ["web", "work experience", "web", "artificial intelligence"],
+    "date": "8/2021",
+    "description": "A block-programming interface for TensorFlow; to be used in machine learning courses for non-C.S. majors at UVa and beyond",
+    "media": [
+      {
+        "type": "image",
+        "src": require("./ProjectImages/TensorSnap_LR.PNG")
+      }
+    ],
+    links: [
+      "https://tensor-snap.web.app/"
     ]
   },
   {
@@ -277,7 +307,6 @@ const data = [
   }
 ]
 
-// TODO: college unfiltered
 // TODO: runner royale
 
 export default data

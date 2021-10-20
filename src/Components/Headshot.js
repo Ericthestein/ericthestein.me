@@ -9,7 +9,7 @@ export default class Headshot extends Component {
 
     render() {
         return(
-            <img className="Headshot" src={require("../Data/headshot.png")}/>
+            <img className="Headshot" src={require("../Data/headshot.jpg")}/>
         )
     }
 }

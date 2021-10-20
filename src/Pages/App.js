@@ -6,9 +6,7 @@ import MySocialLinks from "../Components/MySocialLinks";
 import Headshot from "../Components/Headshot";
 import RandomProjectDisplayer from "../Components/Projects/RandomProjectDisplayer";
 
-const bioText = "My name is Eric Stein. I am a maker of software, including mobile apps, websites, games, backend services, and AI." +
-    " My dream is to harness the power of computer science to better humanity, and I am always searching for my next impactful adventure. Enjoy your stay, and please do not hesitate to contact me if you have" +
-    " any questions or would like to embark on a voyage together.";
+const bioText = "My name is Eric, and I love making impactful apps, websites, games, backend services, AI, and more";
 
 class ResumePlug extends React.Component {
     constructor(props) {

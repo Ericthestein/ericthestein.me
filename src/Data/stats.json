@@ -18,20 +18,24 @@
       "Mentored Solution Challenge teams"
     ],
     "Relevant Coursework": [
-      "Data Structures & Algorithms I",
-      "Computer Organization & Architecture I",
-      "Discrete Mathematics",
-      "Data Structures & Algorithms II",
-      "Computer Organization & Architecture II",
+      "Data Structures & Algorithms I & II",
+      "Computer Organization & Architecture I & II",
       "Software Development Essentials",
-      "Theory of Computation",
       "Operating Systems",
+      "Machine Learning",
+      "Defense Against the Dark Arts (Advanced CyberSecurity)",
+      "Computer Graphics",
+      "Discrete Mathematics",
+      "Theory of Computation",
       "Game Design",
       "Linear Algebra",
-      "Machine Learning",
-      "HCI",
+      "Statistics",
+      "Probability",
+      "Human-Computer Interaction",
       "Data Science Systems",
-      "Intro to CyberSecurity"
+      "Intro to CyberSecurity",
+      "Communication in Data Science",
+      "From Knowledge to Data"
     ],
     "CS Credit Received For": [
       "Introduction to Programming",
@@ -45,6 +49,7 @@
     ],
     "Extracurriculars": [
       "Google Developer Student Club - 2020-Present",
+      "International Collegiate Programming Contest (ICPC) - 2019",
       "Enactus - Consultant for Lytos Technologies - 2019-2020",
       "Online Freelance - 2019-2020",
       "CS Research Assistant - 2019-Present",
@@ -97,45 +102,49 @@
     "Bronze Medal in Electrical Engineering from Staten Island Technical High School"
   ],
   "programming languages": {
-    "Java":  0.9,
+    "Java":  0.8,
     "JavaScript": 0.9,
-    "TypeScript": 0.7,
+    "TypeScript": 0.8,
     "C":  0.75,
     "C++":  0.7,
     "Lua":  0.9,
     "Swift":  0.5,
-    "Python":  0.7,
+    "Python":  0.9,
     "Intel x86 Assembly": 0.4,
-    "Matlab": 0.5
+    "Matlab": 0.5,
+    "R": 0.6,
+    "Solidity": 0.7,
+    "Dart": 0.5,
+    "UNIX Shell Scripting": 0.65
   },
   "frameworks/libraries/services": {
     "React Native":  0.85,
     "React":  0.8,
     "Socket.io": 0.6,
-    "TensorFlow":  0.4,
+    "TensorFlow":  0.7,
     "Firebase": 0.8,
     "Flutter": 0.5,
     "Heroku": 0.6,
-    "Amazon Web Services": 0.6,
-    "Microsoft Azure": 0.4,
-    "Google Cloud Platform": 0.6,
-    "Keras":  0.4,
+    "Amazon Web Services": 0.65,
+    "Microsoft Azure": 0.3,
+    "Google Cloud Platform": 0.65,
     "Flask": 0.4,
     "Express": 0.5,
-    "GitHub": 0.6
+    "Git": 0.7,
+    "Docker": 0.7
   },
   "software": {
     "Autodesk AutoCAD (certified user)": 0.5,
     "Autodesk Revit (certified user)": 0.55,
     "Adobe Photoshop": 0.65,
     "Adobe Premiere": 0.6,
-    "Unity": 0.45,
+    "Unity": 0.8,
     "Unreal Engine": 0.4,
     "Roblox Studio": 0.85,
     "Microsoft Excel": 0.85,
     "Jupyter": 0.5,
     "IntelliJ": 0.75,
     "WebStorm": 0.75,
-    "PyCharm": 0.45
+    "PyCharm": 0.75
   }
 }
